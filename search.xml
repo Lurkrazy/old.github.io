@@ -40,9 +40,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 生活 </tag>
+            
+            <tag> 学习 </tag>
             
             <tag> Coursera </tag>
             
@@ -72,15 +72,15 @@
     
     <entry>
       <title></title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
       <title></title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
