@@ -283,7 +283,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T17:32:18+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T19:06:40+08:00">
                 2018-07-10
               </time>
             
@@ -308,17 +308,6 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/数学/" itemprop="url" rel="index">
                     <span itemprop="name">数学</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数学/编程/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
                   </a>
                 </span>
 
@@ -356,7 +345,14 @@
       
         
           
-            <p>something here</p>
+            <p>由于编程时很难准确预知需要多少空间。比如申请了一个长为$I$的数组存放数据，但是突然发现数组填满了，因此需要一个更大的数组来填放数据，这就涉及了数组的自增策略问题。</p>
+<p>1、定增策略</p>
+<p>设我们需要一个长为$n$的数组，其中$n=mI$。数组初始长度为$I$，每次扩容的大小为$I$，第一次扩容需要一块$2I$长度的数组空间来存放新的数组，此时，原数组复制到新数组空间需要$O(I)$的时间。而当$2I$长度的数组再次用完后，又需要申请一个长度为$3I$的新数组，并且再将长度为$2I$的原数组复制到新数组，此时，需要的时间为$O(2I)$。</p>
+<p>若将申请空间的时间忽略不计，在使用定增策略时，我们每次扩容需要的时间代价分别为</p>
+<p>$I,2I,3I,…,mI$</p>
+<p>算术级数求和</p>
+<p>$总时间=\frac{I(m+1)m}{2}$</p>
+<p>由于$n=mI$，$I为常数$，因此$n$与$m$同阶。$总时间=\frac{n^2+nI}{2I}$，即得定增策略得到长度为n的数组的时间复杂度为$O(n^2)$。</p>
 
           
         
@@ -724,7 +720,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
